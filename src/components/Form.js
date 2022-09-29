@@ -26,11 +26,13 @@ function Form({addPost}) {
 
 
     return(
-        <form>
-            <label htmlFor=""></label>
-            <input value={title} type='title' name='title' placeholder="Blog Title" autoComplete='off' onChange={handleTitle}></input>
-            <textarea value={body} placeholder="Type your stuff..." onChange={handleBody}></textarea> 
-            <button type="submit" name='saveButton' onClick={handleSubmit}>Save</button>
+        <form class="form-box">
+            <div class="form">
+                <label htmlFor=""></label>
+                <input class="title" value={title} type='title' name='title' placeholder="Blog Title" autoComplete='off' onChange={handleTitle}></input>
+                <textarea class="story" value={body} placeholder="Type your story ..." onChange={handleBody}></textarea> 
+                <button class="button" type="submit" name='saveButton' onClick={handleSubmit}>Submit</button>
+            </div>
         </form>
         )
     };
